@@ -1,0 +1,262 @@
+/*reset*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+* ::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+input {
+  outline: none;
+}
+
+/*card users*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/*header container*/
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #555a8893;
+  padding: 10px;
+}
+
+.header_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_btn {
+  padding: 8px 12px;
+  color: white;
+  background-color: #555a88;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 150ms filter ease-in-out;
+}
+
+.header_btn:hover {
+  filter: brightness(1.2)
+}
+
+.users-container {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.user {
+
+
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+  border: 2px solid #aaaaaa;
+  padding: 0px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  transition: 120ms box-shadow ease-in-out;
+
+}
+
+.user:hover {
+  box-shadow: 1px 1px 15px #0003;
+}
+
+.user_title {
+  color: antiquewhite;
+  width: 100%;
+  padding: 10px;
+  top: 10px;
+  display: flex;
+  background-color: #555a88;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_list_email {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icon-email,
+.icon-gift {
+  color: #d85d5d;
+  font-size: x-large;
+  padding-right: 8px;
+}
+
+.user_list_birthday {
+  list-style: none;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.user_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.user_item span {
+  color: #d3d3d3;
+  text-transform: uppercase;
+}
+
+
+.user_item span i {
+  color: #000;
+  margin-right: 4px;
+}
+
+.user_container-btn {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.user_btn {
+  border: none;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 100ms transform ease-in-out;
+  margin-bottom: 10px;
+}
+
+.user_btn:hover {
+  transform: scale(1.1);
+}
+
+.user_btn:first-child {
+  background-color: #d85d5d;
+  color: white;
+}
+
+.user_btn:last-child {
+  color: #aaaaaa;
+}
+
+/*modal*/
+.container-form {
+  position: fixed;
+  background-color: rgba(85, 85, 85, 0.37);
+  backdrop-filter: blur(2px);
+  z-index: 2;
+  top: 0;
+  min-height: 100vh;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.disable-form {
+  display: none;
+}
+
+.container-form.disable-form {
+  display: none;
+}
+
+
+/*form*/
+.form {
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+}
+
+.form_x {
+  position: absolute;
+  color: #d85d5d;
+  font-size: 30px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: 200ms transform ease-in-out;
+}
+
+.form_x:hover {
+  transform: scale(1.1);
+}
+
+.form_title {
+  font-size: 24px;
+}
+
+.form_div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.form_label {
+  font-size: 13px;
+}
+
+.form_input {
+  font-family: inherit;
+  padding: 8px 10px;
+  background-color: aliceblue;
+  border: 1px solid #0003;
+  border-radius: 4px;
+}
+
+.form_btn {
+  width: 100%;
+  padding: 8px 12px;
+  color: white;
+  background-color: #555a88;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 150ms filter ease-in-out;
+}
+
+.form_btn:hover {
+  filter: brightness(1.2);
+}
